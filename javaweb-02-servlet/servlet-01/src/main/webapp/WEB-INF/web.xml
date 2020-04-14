@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0"
+         metadata-complete="true">
+
+  <!--web.xml中是配置我们web的核心应用-->
+
+  <!--注册Servlet-->
+  <servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>com.warren.servlet.HelloServlet</servlet-class>
+  </servlet>
+  <!--一个Servlet的请求路径-->
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <!--
+    可以自定义后缀实现请求映射
+      注意 ：*不能加项目映射的路径
+      s1/wfvdbfsh.wkj
+  -->
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>*.wkj</url-pattern>
+  </servlet-mapping>
+</web-app>
