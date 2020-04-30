@@ -1,6 +1,5 @@
 package com.warren.dao;
 
-import com.mysql.jdbc.authentication.MysqlClearPasswordPlugin;
 import com.warren.pojo.User;
 import com.warren.utils.MybatisUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -17,7 +16,7 @@ public class UserDaoTest {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 
         //方式一：getMapper
-        UserDao userDao = sqlSession.getMapper(UserDao.class);
+        UserMapper userDao = sqlSession.getMapper(UserMapper.class);
         List<User> userList = userDao.getUserList();
 
         for (User user : userList) {
@@ -34,7 +33,7 @@ public class UserDaoTest {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 
         //获取getMapper
-        UserDao userDao = sqlSession.getMapper(UserDao.class);
+        UserMapper userDao = sqlSession.getMapper(UserMapper.class);
         User user = userDao.getUserById(1);
 
         System.out.println(user);
@@ -46,7 +45,7 @@ public class UserDaoTest {
     @Test
     public void getUserLike(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
-        UserDao userDao = sqlSession.getMapper(UserDao.class);
+        UserMapper userDao = sqlSession.getMapper(UserMapper.class);
         List<User> userList = userDao.getUserLike("李");
         for (User user : userList) {
             System.out.println(user);
@@ -60,7 +59,7 @@ public class UserDaoTest {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 
         //获取getMapper
-        UserDao userDao = sqlSession.getMapper(UserDao.class);
+        UserMapper userDao = sqlSession.getMapper(UserMapper.class);
 //        int number = userDao.addUser(new User(4, "warren", "666666"));
         int number = userDao.addUser(new User(5, "李五", "555555"));
         if (number > 0){
@@ -75,7 +74,7 @@ public class UserDaoTest {
     @Test
     public void updateUser(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
-        UserDao mapper = sqlSession.getMapper(UserDao.class);
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         int number = mapper.updateUser(new User(4, "warren2", "123123"));
         if (number > 0){
             System.out.println(number + "列修改成功！");
@@ -90,7 +89,7 @@ public class UserDaoTest {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 
         //获取getMapper
-        UserDao userDao = sqlSession.getMapper(UserDao.class);
+        UserMapper userDao = sqlSession.getMapper(UserMapper.class);
 
         //利用map就不用传递整个对象了
         HashMap<String, Object> map = new HashMap<String, Object>();
@@ -108,7 +107,7 @@ public class UserDaoTest {
     @Test
     public void deleteUser(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
-        UserDao mapper = sqlSession.getMapper(UserDao.class);
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         int number = mapper.deleteUser(4);
         if (number > 0){
             System.out.println(number + "列删除成功！");

@@ -11,6 +11,12 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+<%--  通过表单上传--%>
+<form action="/upload.do" method="post">
+  <p><input type="file" name="file1"></p>
+  <p><input type="file" name="file2"></p>
+  <p><input type="submit"> <input type="reset"></p>
+
+</form>
   </body>
 </html>

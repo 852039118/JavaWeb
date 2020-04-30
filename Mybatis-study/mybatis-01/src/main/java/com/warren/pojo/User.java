@@ -1,5 +1,8 @@
 package com.warren.pojo;
 
+import org.apache.ibatis.type.Alias;
+
+@Alias("helloAlias")
 public class User {
     private int id;
     private String name;

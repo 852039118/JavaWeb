@@ -7,6 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis01" />
+        <module name="mybatis-06" />
+        <module name="mybatis-zhujie" />
+        <module name="mybatis-03" />
+        <module name="mybatis-02" />
       </profile>
     </annotationProcessing>
   </component>
