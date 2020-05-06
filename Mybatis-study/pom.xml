@@ -14,8 +14,9 @@
         <module>mybatis-03</module>
         <module>mybatis-zhujie</module>
         <module>mybatis-06</module>
-        <module>mabatis-07</module>
+        <module>mybatis-07</module>
         <module>mybatis-08</module>
+        <module>mybatis-09-cache</module>
     </modules>
 
     <!--导入依赖-->

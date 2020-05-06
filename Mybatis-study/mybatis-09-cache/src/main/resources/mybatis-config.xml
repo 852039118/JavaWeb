@@ -9,6 +9,7 @@
 
     <settings>
         <setting name="logImpl" value="STDOUT_LOGGING"/>
+<!--        <setting name="mapU" value="true"/>-->
 <!--        <setting name="logImpl" value="LOG4J"/>-->
     </settings>
     
@@ -30,8 +31,7 @@
     </environments>
 
     <mappers>
-        <mapper class="com.warren.dao.TeacherMapper"></mapper>
-        <mapper class="com.warren.dao.StudentMapper"></mapper>
+        <mapper class="com.warren.dao.BlogMapper"></mapper>
     </mappers>
 
 </configuration>

@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Mybatis-study/Mybatis-study.iml" filepath="$PROJECT_DIR$/Mybatis-study/Mybatis-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firstmaven/firstmaven.iml" filepath="$PROJECT_DIR$/firstmaven/firstmaven.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/javaweb.iml" filepath="$PROJECT_DIR$/.idea/javaweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mybatis-study/mabatis-07/mabatis-07.iml" filepath="$PROJECT_DIR$/Mybatis-study/mabatis-07/mabatis-07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mybatis-study/mybatis-01/mybatis-01.iml" filepath="$PROJECT_DIR$/Mybatis-study/mybatis-01/mybatis-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mybatis-study/mybatis-02/mybatis-02.iml" filepath="$PROJECT_DIR$/Mybatis-study/mybatis-02/mybatis-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mybatis-study/mybatis-03/mybatis-03.iml" filepath="$PROJECT_DIR$/Mybatis-study/mybatis-03/mybatis-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mybatis-study/mybatis-06/mybatis-06.iml" filepath="$PROJECT_DIR$/Mybatis-study/mybatis-06/mybatis-06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mybatis-study/mybatis-08/mybatis-08.iml" filepath="$PROJECT_DIR$/Mybatis-study/mybatis-08/mybatis-08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mybatis-study/mybatis-zhujie/mybatis-zhujie.iml" filepath="$PROJECT_DIR$/Mybatis-study/mybatis-zhujie/mybatis-zhujie.iml" />
     </modules>
   </component>
 </project>
