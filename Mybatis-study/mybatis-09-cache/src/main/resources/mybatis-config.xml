@@ -9,6 +9,7 @@
 
     <settings>
         <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <setting name="cacheEnabled" value="true"/>
 <!--        <setting name="mapU" value="true"/>-->
 <!--        <setting name="logImpl" value="LOG4J"/>-->
     </settings>
@@ -31,7 +32,7 @@
     </environments>
 
     <mappers>
-        <mapper class="com.warren.dao.BlogMapper"></mapper>
+        <mapper class="com.warren.dao.UserMapper"></mapper>
     </mappers>
 
 </configuration>

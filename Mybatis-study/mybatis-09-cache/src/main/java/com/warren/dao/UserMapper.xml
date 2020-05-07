@@ -2,6 +2,15 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper>
-<!--    <select id=""-->
+<mapper namespace="com.warren.dao.UserMapper">
+
+<!--    <cache  eviction="FIFO"-->
+<!--            flushInterval="60000"-->
+<!--            size="512"-->
+<!--            readOnly="true"/>-->
+    <cache/>
+
+    <select id="queryUserById" parameterType="int" resultType="user" useCache="true">
+        select * from mybatis.user where id = #{id}
+    </select>
 </mapper>
